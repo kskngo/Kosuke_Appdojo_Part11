@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet private weak var label: UILabel!
 
     @IBAction private func exitFromTableByTapCell(segue: UIStoryboardSegue) {

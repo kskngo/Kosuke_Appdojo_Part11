@@ -71,9 +71,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dCH-t7-7uB">
-                                <rect key="frame" x="0.0" y="108" width="428" height="730"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dCH-t7-7uB">
+                                <rect key="frame" x="0.0" y="56" width="428" height="782"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" id="MH5-fJ-brf">
@@ -92,6 +91,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acx-qL-QZb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dCH-t7-7uB" firstAttribute="top" secondItem="acx-qL-QZb" secondAttribute="top" id="6pg-fA-3vF"/>
+                            <constraint firstItem="dCH-t7-7uB" firstAttribute="trailing" secondItem="acx-qL-QZb" secondAttribute="trailing" id="EAg-Q4-6IQ"/>
+                            <constraint firstItem="dCH-t7-7uB" firstAttribute="leading" secondItem="acx-qL-QZb" secondAttribute="leading" id="VAp-90-L7h"/>
+                            <constraint firstItem="dCH-t7-7uB" firstAttribute="bottom" secondItem="acx-qL-QZb" secondAttribute="bottom" id="hYr-PQ-Mbb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="都道府県" id="WuA-cJ-UHe">
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="1s0-W1-Ecm">
