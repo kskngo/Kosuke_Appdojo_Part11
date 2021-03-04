@@ -9,11 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet private weak var label: UILabel!
+
+    @IBAction private func exitFromTableByTapCell(segue: UIStoryboardSegue) {
+        guard let tableViewController = segue.source as? TableViewController else { return }
+        if let prefectureName = tableViewController.prefectureName {
+            label.text = prefectureName
+        }
     }
-
-
 }
-
