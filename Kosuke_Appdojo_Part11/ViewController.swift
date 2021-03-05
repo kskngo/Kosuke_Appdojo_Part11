@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     @IBAction private func exitFromTableByTapCell(segue: UIStoryboardSegue) {
         guard let tableViewController = segue.source as? TableViewController else { return }
-        if let prefectureName = tableViewController.prefectureName {
-            label.text = prefectureName
-        }
+        guard let prefectureName = tableViewController.selectedPrefectureName else { return }
+
+        label.text = prefectureName
     }
 }
